@@ -301,7 +301,8 @@ class SteamPasswordChange:
             except NotFoundMobileConfirmationError:
                 await asyncio.sleep(2)
         else:
-            ...
+            raise NotFoundMobileConfirmationError('Not found mobile confirmation')
+
         await self._poll_account_recovery_confirmation(params)
         await self._verify_account_recovery_code(params)
         await self._account_recovery_get_next_step(params)
