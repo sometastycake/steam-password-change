@@ -2,7 +2,7 @@
 
 ## Description
 
-Script change Steam account password. It works only for accounts with Steam Guard
+Script changes Steam account password. It works only for accounts with Steam Guard
 
 ## Usage
 
