@@ -280,9 +280,9 @@ class SteamPasswordChange:
         Change password.
         """
         if not new_password:
-            raise RuntimeError('Empty new password')
+            raise ValueError('Empty new password')
         if new_password == self._steam.password:
-            raise RuntimeError('New password is equal old password')
+            raise ValueError('New password is equal old password')
 
         await self._steam.login_to_steam()
 
