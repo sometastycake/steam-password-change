@@ -7,7 +7,7 @@ Script changes Steam account password. It works only for accounts with Steam Gua
 ## Usage
 
 ```python
-from steampassword.password import SteamPasswordChange
+from steampassword.chpassword import SteamPasswordChange
 from steampassword.steam import CustomSteam
 from steampassword.utils import generate_password
 

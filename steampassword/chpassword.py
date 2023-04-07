@@ -276,9 +276,6 @@ class SteamPasswordChange:
             raise ErrorSteamPasswordChange(response['errorMsg'])
 
     async def change(self, new_password: str):
-        """
-        Change password.
-        """
         if not new_password:
             raise ValueError('Empty new password')
         if new_password == self._steam.password:
