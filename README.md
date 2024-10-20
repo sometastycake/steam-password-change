@@ -1,5 +1,9 @@
 # Steam-password-change
 
+[![Python: versions](
+https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)]()
+
+
 ## Description
 
 Script changes Steam account password. It works only for accounts with Steam Guard

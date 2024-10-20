@@ -291,7 +291,7 @@ class SteamPasswordChange:
         # Confirm password change in mobile app
         for _ in range(3):
             try:
-                success = await self._steam_trade.mobile_confirm_by_tradeofferid(params.s)
+                success = await self._steam_trade.mobile_confirm_by_creator_id(params.s)
                 if not success:
                     raise ErrorSteamPasswordChange('Error password change confirmation')
                 break
