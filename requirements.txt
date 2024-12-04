@@ -1,3 +1,3 @@
 pysteamauth==1.1.0
-pysteamlib==0.1.0
+pysteamlib==1.0.0
 yarl==1.8.2

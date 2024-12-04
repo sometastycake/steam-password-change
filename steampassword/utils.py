@@ -10,7 +10,7 @@ def generate_password(
 ) -> str:
     if min_length > max_length:
         raise ValueError('Wrong length interval')
-    if min_length < 0 or max_length < 0:
+    if min_length < 0 or max_length < 0 or max_length > 32:
         raise ValueError('Wrong length value')
     length = random.randint(min_length, max_length)
     return ''.join(secrets.choice(alphabet) for _ in range(length))
