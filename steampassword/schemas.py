@@ -13,7 +13,7 @@ class RSAKey(pydantic.BaseModel):
     mod: str
     exp: str
     timestamp: int
-    token_gid: str = None
+    token_gid: Optional[str] = None
 
     class Config:
         fields = {
