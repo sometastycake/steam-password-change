@@ -86,11 +86,13 @@ class SteamPasswordChange:
                 's': data.s,
                 'method': '8',
                 'link': '',
+                'n': '1',
             },
             headers={
                 'Accept': '*/*',
                 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
                 'Origin': 'https://help.steampowered.com',
+                'Referer': f'https://help.steampowered.com/ru/wizard/HelpWithLoginInfoEnterCode?s={data.s}&account={data.account}&reset={data.reset}&lost={data.lost}&issueid={data.issueid}',
                 'X-Requested-With': 'XMLHttpRequest',
                 'User-Agent': self.BROWSER,
             }
